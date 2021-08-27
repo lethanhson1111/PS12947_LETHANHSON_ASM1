@@ -1,0 +1,48 @@
+﻿@model ASM.Models.ViewModels.ViewLogin
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Online Food World Responsive Widget Template :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Online Food World  template Responsive, Login form web template,Flat Pricing tables,Flat Drop downs Sign up Web Templates,
+ Flat Web Templates, Login sign up Responsive web template, SmartPhone Compatible web template, free web designs for Nokia, Samsung, LG, SonyEricsson, Motorola web design">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Custom Theme files -->
+    <link href="~/css/style.css" rel='stylesheet' type='text/css' />
+    <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <!--//fonts-->
+</head>
+<body>
+    <!-- login -->
+    <div class="text-center" asp-validation-summary="All"></div>
+    <div class="container login-section">
+        <div class="login-w3l">
+            <div class="login-form">
+                <h2 class="wthree">Đăng nhập</h2>
+                <form asp-action="Login" method="post" class="agile_form">
+                    <input type="hidden" asp-for="ReturnUrl" />
+                    <div class="form-group">
+                        <label asp-for="UserName"></label>
+                        <input asp-for="UserName" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" type="password" class="form-control" />
+                    </div>
+                    <input type="submit" value="Xác nhận">
+                </form>
+            </div>
+        </div>
+        <div class="login-w3l-bg">
+            <img src="~/images/grid.png" alt="" />
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</body>
+</html>
